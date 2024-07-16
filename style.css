@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+.container{
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: #cc0000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    
+}
+button{
+    margin-top: 10px;
+}
+#playgrid{
+    width: 366px;
+    height: 366px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 120px;
+    height: 120px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.x::before{
+    content: "X";
+    font-size: 100px;
+    width: 100%;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: no-drop;
+
+}
+.o::before{
+    content: "O";
+    font-size: 100px;
+    width: 100%;
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    cursor: no-drop;
+
+}
+#btn-reset{
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(0, 30, 255);
+    cursor: pointer;
+}
+#info{
+    color: rgb(90, 25, 154);
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
